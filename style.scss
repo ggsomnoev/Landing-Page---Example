@@ -213,3 +213,53 @@ nav {
         }
     }
 }
+#culture {
+    margin-top: 100px;
+}
+.cult-cont {
+    text-align: center;
+    width: 940px;
+    margin: 0 auto;
+    p {
+        color: #777777;
+    }
+    .culture-info {
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 90px;
+    }
+    h1 {
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: 700px;
+        margin-bottom: 10px;
+    }
+    > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 110px;
+        span {
+            width: 170px;
+            height: 2px;    
+            border: 1px solid gray; 
+        }
+        img {            
+            max-width: 221px;
+            max-height: 220px;
+            width: 80%;
+        }
+    }
+    .articles {
+        padding: 37px 0;
+        h3 {
+            margin-bottom: 19px;
+        }
+        p {
+            font-size: 14px;
+            width: 290px;
+            letter-spacing: -0.025em;
+            line-height: 1.42857143;
+        }
+    }
+}
