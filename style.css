@@ -357,4 +357,63 @@ nav .nav-menu li .active {
   letter-spacing: -0.025em;
   line-height: 1.42857143;
 }
+
+#clients {
+  width: 940px;
+  margin: 0 auto;
+}
+
+#clients h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+#clients > p {
+  font-size: 20px;
+  margin: 20px 0 90px;
+}
+
+#clients h1, #clients > p {
+  text-align: center;
+}
+
+#clients p {
+  color: #777777;
+}
+
+#clients .article-cont article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+
+#clients .article-cont article img {
+  max-width: 221px;
+  max-height: 220px;
+  width: 23%;
+}
+
+#clients .article-cont article div {
+  background: url("imgs/box_right.png") center no-repeat;
+  background-size: 100%;
+  height: 220px;
+  padding: 65px 0 0 80px;
+}
+
+#clients .article-cont article div p {
+  font-size: 22px;
+}
+
+#clients .article-cont article:nth-child(2) {
+  margin-bottom: 0;
+}
+
+#clients .article-cont article:nth-child(2) div {
+  background: url("imgs/box_left.png") center no-repeat;
+  background-size: 100%;
+}
 /*# sourceMappingURL=style.css.map */
