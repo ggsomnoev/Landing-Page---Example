@@ -442,7 +442,7 @@ nav {
     margin-top: 100px;
     text-align: center;
     background-color: #333;
-    padding: 50px 0 40px;
+    padding-top: 50px;
     h1 {
         color: #13df13;
         margin-bottom: 20px;
@@ -454,6 +454,7 @@ nav {
         display: flex;
         justify-content: center;
         line-height: 128px;
+        margin-bottom: 40px;
         li {
             background: linear-gradient(to bottom, #13df13 0%,#1d3505 66%);
             font-size: 90px;
@@ -466,5 +467,108 @@ nav {
             margin: 0 10px;
         }
     }
-    
+    .contacts-section {
+        display: flex;
+        color: #b6b6b6;
+        max-width: 940px;
+        font-size: 16px;
+        justify-content: center;
+        margin: 0 230px;
+        padding: 60px 0;
+        section {
+            padding-left: 28px;
+            h3 {
+                color: white;
+                text-transform: uppercase;
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+            > div {
+                display: flex;
+                align-items: flex-start;
+                text-align: left;
+                padding-bottom: 20px;
+                p, a {
+                    color: #b6b6b6;
+                    margin-left: 12px;
+                }
+            }            
+        }
+        .latest-tweets {
+            div p, span {
+                margin-bottom: 3px;
+            }
+            span {
+                margin-left: 12px;
+                color: #d3d3d3;
+                font-weight: 700;
+            }
+            .time {
+                font-size: 12px;
+                margin-bottom: 20px;
+                margin-top: 8px;
+            }
+        }
+    }
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 14px;
+    max-width: 940px;
+    margin: 0 auto;
+    p {
+        width: 40%;
+        color: #555555
+    }
+    ul {
+        display: flex;
+        width: 40%;
+        li {
+            max-width: 40px;
+            width:100%;
+            margin-right: 10px;
+            a {
+                background: url('imgs/icons_social.png') no-repeat;
+                display: block;
+                height: 41px;
+            }
+            .tweeter-link {
+                background-position: -1px -43px;
+            }
+            .facebook-link {
+                background-position: -51px -43px;
+            }
+            .pintest-link {
+                background-position: -101px -43px;
+            }
+            .google_plus-link {
+                background-position: -151px -43px;
+            }
+            
+            .tweeter-link:hover {
+                
+            }
+            .facebook-link:hover {
+                
+            }
+            .pintest-link:hover {
+                
+            }
+            .google_plus-link:hover {
+                
+            }
+        }
+    }
+    button {
+        color: white;
+        background-color: #7cc576;
+        padding: 11px 25px;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 15px;
+    }
 }
