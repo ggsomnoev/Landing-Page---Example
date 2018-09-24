@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
 * {
   margin: 0;
   padding: 0;
@@ -19,11 +20,13 @@ html ul {
 html a {
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 
 html button {
   background: 0;
   border: 0;
+  cursor: pointer;
 }
 
 html .container {
@@ -379,6 +382,7 @@ nav .nav-menu li .active {
 
 #clients p {
   color: #777777;
+  font-weight: 700;
 }
 
 #clients .article-cont article {
@@ -406,6 +410,14 @@ nav .nav-menu li .active {
 
 #clients .article-cont article div p {
   font-size: 22px;
+  width: 95%;
+}
+
+#clients .article-cont article div .author {
+  color: #7cc576;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 15px;
 }
 
 #clients .article-cont article:nth-child(2) {
@@ -415,5 +427,184 @@ nav .nav-menu li .active {
 #clients .article-cont article:nth-child(2) div {
   background: url("imgs/box_left.png") center no-repeat;
   background-size: 100%;
+}
+
+.clients .contact-us {
+  text-align: center;
+  background: #7cc576;
+  height: 250px;
+  margin-top: 100px;
+  padding: 70px 0;
+}
+
+.clients .contact-us h1 {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
+
+.clients .contact-us button {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 30px;
+  padding: 13px 28px;
+  border: 3px solid white;
+  text-transform: uppercase;
+  border-radius: 12px;
+}
+
+.clients .sponsors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 60px 0;
+}
+
+.clients .sponsors a {
+  margin: 0 41px;
+}
+
+#contacts .contacts-cont {
+  text-align: center;
+  font-weight: 700;
+}
+
+#contacts .contacts-cont h1 {
+  text-transform: uppercase;
+  color: #7cc576;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+#contacts .contacts-cont table {
+  margin: 0 auto;
+  width: 470px;
+  border-spacing: 0;
+  border-collapse: collapse;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#contacts .contacts-cont table tr:nth-child(even):hover {
+  background-color: #b9eab4;
+}
+
+#contacts .contacts-cont table tr:nth-child(even):hover textarea {
+  background-color: #deffdb;
+}
+
+#contacts .contacts-cont table tr:nth-child(even):hover input {
+  background-color: #f9f7f7;
+}
+
+#contacts .contacts-cont table tr:nth-child(odd):hover {
+  background-color: #DDDDDD;
+}
+
+#contacts .contacts-cont table tr:nth-child(odd):hover input {
+  background-color: #f9f7f7;
+}
+
+#contacts .contacts-cont table tr:last-child:hover {
+  background-color: white;
+}
+
+#contacts .contacts-cont table tr:last-child:hover input {
+  background-color: #7cc576;
+  color: black;
+  border: 1px solid black;
+}
+
+#contacts .contacts-cont table th {
+  text-align: left;
+  vertical-align: top;
+  font-family: 'Roboto Slab', 'serif';
+  font-weight: bold;
+}
+
+#contacts .contacts-cont table td {
+  width: 334px;
+}
+
+#contacts .contacts-cont table td input {
+  background: 0;
+  border: 0;
+  line-height: 40px;
+  width: 100%;
+}
+
+#contacts .contacts-cont table td textarea {
+  border: 0;
+  width: 100%;
+  max-height: 102px;
+}
+
+#contacts .contacts-cont table td textarea:hover {
+  background-color: #deffdb;
+}
+
+#contacts .contacts-cont table td input:hover {
+  background-color: #f9f7f7;
+}
+
+#contacts .contacts-cont table td .submit-input {
+  color: white;
+  cursor: pointer;
+  background-color: #7cc576;
+  width: 30%;
+  border-radius: 25px;
+  padding: 7px 25px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#contacts .contacts-cont table td, #contacts .contacts-cont table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.clock {
+  margin-top: 100px;
+  text-align: center;
+  background-color: #333;
+  padding: 50px 0 40px;
+}
+
+.clock h1 {
+  color: #13df13;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.clock ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 128px;
+}
+
+.clock ul li {
+  background: -webkit-gradient(linear, left top, left bottom, from(#13df13), color-stop(66%, #1d3505));
+  background: linear-gradient(to bottom, #13df13 0%, #1d3505 66%);
+  font-size: 90px;
+  width: 10%;
+  text-shadow: 0 0 2px #fff;
+  border-radius: 5px;
+}
+
+.clock ul li:nth-child(even) {
+  width: 4%;
+  margin: 0 10px;
 }
 /*# sourceMappingURL=style.css.map */
