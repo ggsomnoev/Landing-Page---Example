@@ -50,19 +50,24 @@ nav {
     .logo {
         display: flex;
         align-items:center;
-        font-size: 18px;
+        font-size: 18px;        
         a {
             margin-left: 5px;
+            color:black;
+            transition: color 0.5s ease-out;
+        }
+        a:hover {
+            color: #7cc576;
         }
     }
     .nav-menu {
         display: flex;    
         li {
             padding: 15px;
-            .menu-link {
+            a {
                 color:#9b9b9b;
             }
-            .active {
+            a:hover, .active {
                 color: black;
             }
         }
@@ -76,6 +81,10 @@ nav {
     font-weight: bold;
     text-transform: uppercase;
     color: white;
+}
+.slider-btn:hover {
+    color: #222222;
+    background: #ffffff;
 }
 
 #slider {
@@ -355,6 +364,7 @@ nav {
     }
 }
 #contacts {    
+    margin-top: 100px;
     .contacts-cont {
         text-align: center;
         font-weight: 700;
@@ -392,6 +402,7 @@ nav {
                     background-color: #7cc576;
                     color: black;
                     border: 1px solid black;
+                    box-sizing: border-box;
                 }
             }
             th {
@@ -549,16 +560,16 @@ footer {
             }
             
             .tweeter-link:hover {
-                
+                background-position: -1px 0;
             }
             .facebook-link:hover {
-                
+                background-position: -51px 0;
             }
             .pintest-link:hover {
-                
+                background-position: -101px 0;
             }
             .google_plus-link:hover {
-                
+                background-position: -151px 0;
             }
         }
     }
@@ -572,10 +583,3 @@ footer {
         border-radius: 15px;
     }
 }
-
-
-
-
-
-
-

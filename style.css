@@ -73,6 +73,13 @@ nav .logo {
 
 nav .logo a {
   margin-left: 5px;
+  color: black;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+nav .logo a:hover {
+  color: #7cc576;
 }
 
 nav .nav-menu {
@@ -85,11 +92,11 @@ nav .nav-menu li {
   padding: 15px;
 }
 
-nav .nav-menu li .menu-link {
+nav .nav-menu li a {
   color: #9b9b9b;
 }
 
-nav .nav-menu li .active {
+nav .nav-menu li a:hover, nav .nav-menu li .active {
   color: black;
 }
 
@@ -101,6 +108,11 @@ nav .nav-menu li .active {
   font-weight: bold;
   text-transform: uppercase;
   color: white;
+}
+
+.slider-btn:hover {
+  color: #222222;
+  background: #ffffff;
 }
 
 #slider {
@@ -469,6 +481,10 @@ nav .nav-menu li .active {
   margin: 0 41px;
 }
 
+#contacts {
+  margin-top: 100px;
+}
+
 #contacts .contacts-cont {
   text-align: center;
   font-weight: 700;
@@ -518,6 +534,8 @@ nav .nav-menu li .active {
   background-color: #7cc576;
   color: black;
   border: 1px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #contacts .contacts-cont table th {
@@ -720,6 +738,22 @@ footer ul li .pintest-link {
 
 footer ul li .google_plus-link {
   background-position: -151px -43px;
+}
+
+footer ul li .tweeter-link:hover {
+  background-position: -1px 0;
+}
+
+footer ul li .facebook-link:hover {
+  background-position: -51px 0;
+}
+
+footer ul li .pintest-link:hover {
+  background-position: -101px 0;
+}
+
+footer ul li .google_plus-link:hover {
+  background-position: -151px 0;
 }
 
 footer button {
