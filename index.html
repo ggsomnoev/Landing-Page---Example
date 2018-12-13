@@ -6,291 +6,244 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="bs-third.css">
+    <script type="text/javascript" src='js/main.js'></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="nav-row">
-            <nav>
-                <h4 class="logo">
-                    <img src="./imgs/logo.png" alt="">
-                    <a href="javascript:void(0)">Treehouse</a>
-                </h4>
-                <ul class="nav-menu">
-                    <li><a href="#slider" class="menu-link active">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#culture">Culture</a></li>
-                    <li><a href="#clients">Clients</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                </ul>
-            </nav>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <a class="navbar-brand" href="#">BBC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-4">
+                <li class="nav-item">
+                    <a class="nav-link" data-value="#about" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " data-value="portfolio" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " data-value="blog" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " data-value="team" href="#team">
+                        Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " data-value="contact" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
-        <section id="slider">
-            <h1>Create Digital<br>Solutions</h1>
-            <p>Proin iaculis purus consequat sem cure.</p>
-            <button class="slider-btn">View Portfolio</button>
-        </section>
-        <section id="services">
-            <h1>Professional Services</h1>
-            <p>Proin iaculis purus consequat sem cure</p>
-            <div class="article-cnt">
-                <article>
-                    <a href="javascript:void(0)"><img src="./imgs/heart_icon.png" alt=""></a>
-                    <h3>Beautiful Designs</h3>
-                    <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
-                        rhoncus posuere odio in tincidunt.</p>
-                </article>
-                <article>
-                    <a href="javascript:void(0)"><img src="./imgs/mobile_icon.png" alt=""></a>
-                    <h3>Beautiful Designs</h3>
-                    <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
-                        rhoncus posuere odio in tincidunt.</p>
-                </article>
-                <article>
-                    <a href="javascript:void(0)"><img src="./imgs/line_icon.png" alt=""></a>
-                    <h3>Beautiful Designs</h3>
-                    <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
-                        rhoncus posuere odio in tincidunt.</p>
-                </article>
+    </nav>
+    <header class="header">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="description">
+                <h1> Hello ,Welcome To My official Website
+                    <p> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <button class="btn btn-outline-secondary btn-lg">See more</button> </h1>
             </div>
-        </section>
-        <section class="services">
-            <h1>Just relax <span>&</span><br> let us do the heavy lifting</h1>
-            <p>Proin iaculis purus consequat sem cure digni ssim.Donec<br> porttitora entum suscipit aenean rhoncus
-                posuere odio in tincidunt.</p>
-            <ul>
-                <li><img src="imgs/circle.png" alt="">Initial Setup & Customizations</li>
-                <li><img src="imgs/circle.png" alt="">Regular Updates</li>
-                <li><img src="imgs/circle.png" alt="">Round The Clock Support</li>
-            </ul>
-            <button class="slider-btn">Learn More</button>
-        </section>
-        <section id="projects">
-            <h1>Latest Projects</h1>
-            <p>Proin iaculis purus consequat sem cure</p>
-            <div class="project-cont">
-                <div>
-                    <h3>Developing a framework</h3>
-                    <p class="frwork">Proin iaculis purus consequat semcure digni ssim <br>
-                        donec porttitora entum suscipit aenean rhoncus posuere<br>
-                        odio in tincidunt.</p>
-                    <ul>
-                        <li>
-                            <img src="imgs/busket_icon.png" alt="">
-                            <div>
-                                <h3>E-Commerce Ready</h3>
-                                <p>Proin iaculis purus consequat sem cure digni ssim.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="imgs/laptop_icon.png" alt="">
-                            <div>
-                                <h3>Powerful SEO Features</h3>
-                                <p>Proin iaculis purus consequat sem cure.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="imgs/lock_icon.png" alt="">
-                            <div>
-                                <h3>E-Commerce Ready</h3>
-                                <p>Proin iaculis purus consequat sem cure iaculis purus.</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <p>Proin iaculis purus consequat sem cure digni ssim donec
-                        porttitora entum suscipit aenean rhoncus posuere odio in.</p>
-                    <button>View Details →</button>
-                </div>
-                <img src="imgs/ipad.jpg" class="project-img" alt="">
+        </div>
+    </header>
+    <section class="about" id="about">
+        <h1 class="text-center">About me</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <img src="https://source.unsplash.com/random/100x100" class="img-fluid">
+                <span class="text-justify">S.Web Developer</span>
             </div>
-        </section>
-        <section id="culture">
-            <div class="cult-cont">
-                <h1>Culture & values</h1>
-                <p class="culture-info">Proin iaculis purus consequat cure.</p>
-                <div>
-                    <a href="javascript:void(0)"><img src="imgs/music_icon.png" alt=""></a>
-                    <span></span>
-                    <a href="javascript:void(0)"><img src="imgs/lines_icon.png" alt=""></a>
-                    <span></span>
-                    <a href="javascript:void(0)"><img src="imgs/star_icon.png" alt=""></a>
-                </div>
-                <div class="articles">
-                    <article>
-                        <h3>Work-life balance</h3>
-                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
-                            rhoncus posuere odio in tincidunt.</p>
-                    </article>
-                    <article>
-                        <h3>Quality over quantity</h3>
-                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
-                            rhoncus posuere odio in tincidunt.</p>
-                    </article>
-                    <article>
-                        <h3>Deliver excellence</h3>
-                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
-                            rhoncus posuere odio in tincidunt.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <section id="clients">
-            <h1>Our awesome clients</h1>
-            <p>Proin iaculis purus consequat sem cure.</p>
-            <div class="article-cont">
-                <article>
-                    <img src="imgs/big_circle.png" alt="">
-                    <div>
-                        <p>“ Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit aenean
-                            rhoncus. ”</p>
-                        <p class="author">- Jamie Richardson, Founder of Cocoa Media</p>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <p>“ Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit aenean
-                            rhoncus. ”</p>
-                        <p class="author">- Kim Thompson, Founder of Rainel</p>
-                    </div>
-                    <img src="imgs/big_circle.png" alt="">
-                </article>
-            </div>
-        </section>
-        <section class="clients">
-            <div class="contact-us">
-                <h1>Ready to talk about your next project?</h1>
-                <button>Contact us</button>
-            </div>
-            <div class="sponsors">
-                <a href="javascript:void(0)"><img src="imgs/logo_envato.png" alt=""></a>
-                <a href="javascript:void(0)"><img src="imgs/logo_wordpress.png" alt=""></a>
-                <a href="javascript:void(0)"><img src="imgs/logo_tuts.png" alt=""></a>
-                <a href="javascript:void(0)"><img src="imgs/logo_microlanser.png" alt=""></a>
-            </div>
-        </section>
-        <section id="contacts">
-            <div class="contacts-cont">
-                <h1>Please Leave Review</h1>
-                <table>
-                    <tr>
-                        <th>Name</th>
-                        <td><input type="text" name="name"></td>
-                    </tr>
-                    <tr>
-                        <th>Age</th>
-                        <td><input type="text" name="age"></td>
-                    </tr>
-                    <tr>
-                        <th>Email</th>
-                        <td><input type="text" name="email"></td>
-                    </tr>
-                    <tr>
-                        <th>Review</th>
-                        <td><textarea name="review" id="" cols="30" rows="10"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <input type="submit" value="Send" class="submit-input">
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </section>
-        <section class="clock">
-            <h1>Next summer will be in</h1>
-            <div>
-                <ul>
-                    <li>3</li>
-                    <li>:</li>
-                    <li>7</li>
-                    <li>:</li>
-                    <li>21</li>
-                    <li>:</li>
-                    <li>12</li>
-                    <li>:</li>
-                    <li>39</li>
-                </ul>
-            </div>
-            <div class="contacts-section">
-                <section class="contacts">
-                    <h3>Contact us</h3>
-                    <div>
-                        <img src="imgs/contacts/location_icon.png" alt="">
-                        <p>55 Main St. <br>
-                            Toronto, ON <br>
-                            M1H 3A5</p>
-                    </div>
-                    <div>
-                        <img src="imgs/contacts/iphone_icon.png" alt="">
-                        <p>(416) 555-5252</p>
-                    </div>
-                    <div>
-                        <img src="imgs/contacts/mail_icon.png" alt="">
-                        <p>hello@treehouse.com</p>
-                    </div>
-                </section>
-                <section class="latest-posts">
-                    <h3>Latest posts</h3>
-                    <div>
-                        <img src="imgs/contacts/news_icon.png" alt="">
-                        <a href="javascript:void(0)">Made With Love In Toronto</a>
-                    </div>
-                    <div>
-                        <img src="imgs/contacts/photo_icon.png" alt="">
-                        <a href="javascript:void(0)">Startup News & Emerging Tech</a>
-                    </div>
-                    <div>
-                        <img src="imgs/contacts/news_icon.png" alt="">
-                        <a href="javascript:void(0)">Bitcoin Will Soon Rule The World</a>
-                    </div>
-                    <div>
-                        <img src="imgs/contacts/news_icon.png" alt="">
-                        <a href="javascript:void(0)">Wearable Technology On The Rise</a>
-                    </div>
-                    <div>
-                        <img src="imgs/contacts/media_icon.png" alt="">
-                        <a href="javascript:void(0)">Learn Web Design In 30 Days!</a>
-                    </div>
-                </section>
-                <section class="latest-tweets">
-                    <h3>Latest tweets</h3>
-                    <div>
-                        <img src="imgs/contacts/tw_icon.png" alt="">
-                        <div>
-                            <p>Confucius: Life is really simple,<br>
-                                but we insist on making it <br>
-                                complicated.</p>
-                            <span class="hashtag">#famousquotes</span>
-                            <p class="time">8 mins ago</p>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="imgs/contacts/tw_icon.png" alt="">
-                        <div>
-                            <p>Grab the Free Treehouse web <br>
-                                template at FreebiesXpress!</p>
-                            <span class="hashtag">#freebies #templates</span>
-                            <p class="time">2 days ago</p>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </section>
-        <footer>
-            <p>&copy; Copyright 2014 FreebiesXpress.com</p>
-            <ul>
-                <li><a href="javascript:void(0)" class="tweeter-link"></a></li>
-                <li><a href="javascript:void(0)" class="facebook-link"></a></li>
-                <li><a href="javascript:void(0)" class="pintest-link"></a></li>
-                <li><a href="javascript:void(0)" class="google_plus-link"></a></li>
-            </ul>
-            <button>back to top</button>
-        </footer>
-    </div>
-</body>
+            <div class="col-lg-8 col-md-8 col-sm-12 desc">
 
-</html>
+                <h3>D.John</h3>
+                <p>
+                    ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <!-- portfolio -->
+        <div class="portfolio">
+            <h1 class="text-center">Portfolio</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <img src="images/portfolio/port13.png" class="img-fluid">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <img src="images/portfolio/port1.png" class="img-fluid">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <img src="images/portfolio/port6.png" class="img-fluid">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <img src="images/portfolio/port3.png" class="img-fluid">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <img src="images/portfolio/port11.png" class="img-fluid">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <img src="images/portfolio/electric.png" class="img-fluid">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <img src="images/portfolio/Classic.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <img src="images/portfolio/port1.png" class="img-fluid">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <img src="images/portfolio/port8.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Posts section -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <h1 class="text-center">Blog</h1>
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/posts/polit.jpg" class="img-fluid">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">Post Title</h4>
+                            <p class="card-text">
+
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="" class="card-link">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/posts/images.jpg" class="img-fluid">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">Post Title</h4>
+                            <p class="card-text">
+
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="" class="card-link">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/posts/imag2.jpg" class="img-fluid">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">Post Title</h4>
+                            <p class="card-text">
+
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="" class="card-link">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team section -->
+    <section class="team" id="team">
+        <div class="container">
+            <h1 class="text-center">Our Team</h1>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-12 item">
+                    <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid" alt="team">
+                    <div class="des">
+                        Sara
+                    </div>
+                    <span class="text-muted">HR</span>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 item">
+                    <img src="https://images.pexels.com/photos/213117/pexels-photo-213117.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid" alt="team">
+                    <div class="des">
+                        Chris
+                    </div>
+                    <span class="text-muted">Team Manager</span>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 item">
+                    <img src="https://images.pexels.com/photos/769746/pexels-photo-769746.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid" alt="team">
+                    <div class="des">
+                        John
+                    </div>
+                    <span class="text-muted">Front End Developer</span>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 item">
+                    <img src="https://images.pexels.com/photos/567459/pexels-photo-567459.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid" alt="team">
+                    <div class="des">
+                        Jirard
+                    </div>
+                    <span class="text-muted">Back End Developer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact form -->
+    <section class="contact-form" id="contact">
+        <div class="container">
+            <form>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <h1>Get in Touch</h1>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12 right">
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com"
+                                name="email">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control form-control-lg">
+
+                </textarea>
+                        </div>
+                        <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>

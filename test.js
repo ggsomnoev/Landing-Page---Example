@@ -129,10 +129,10 @@ fetch("https://survey-api.cmix.com/surveys?sortColumn=DATE_CREATED&sortDirection
     "mode": "cors"
 }).then(resp => resp.json()).then(json => {
     designSurveys = [];
-    for(let survey of json.data) {
-        if(survey.status == "DESIGN") {
+    for (let survey of json.data) {
+        if (survey.status == "DESIGN") {
             designSurveys.push(survey);
-        } 
+        }
         // else if(survey.status == "LIVE") {
         //     liveSurveys.push(survey);
         // }
@@ -140,11 +140,24 @@ fetch("https://survey-api.cmix.com/surveys?sortColumn=DATE_CREATED&sortDirection
 
     console.log(designSurveys);
     // console.log(liveSurveys);
-    for(let survey of designSurveys) {
+    for (let survey of designSurveys) {
         console.log(survey.id + " => " + survey.name + " => " + survey.status);
     }
 });
 
 
 
-
+fetch("https://www.cmix.com/login",
+    {
+        "credentials": "include",
+        "headers": {
+            "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+            "accept-language": "en-US,en;q=0.9,bg;q=0.8", "cache-control": "max-age=0", "upgrade-insecure-requests": "1"
+        },
+        "referrer": "https://auth.cmix.com/",
+        "referrerPolicy": "no-referrer-when-downgrade",
+        "body": null,
+        "method": "GET",
+        "mode": "cors"
+    }
+).then(res => console.log(res));
