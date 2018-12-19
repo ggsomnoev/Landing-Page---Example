@@ -192,7 +192,7 @@ class Layout:
 
 
 newLayout=Layout()
-newLayout.login("cmixautomation@gmail.com", "123456")
+newLayout.login("cmixautomation@gmail.com", "")
 newLayout.getSurvetIds("adults")
 newLayout.dowloadLayouts()
 # newLayout.uploadLayouts()
